@@ -136,7 +136,27 @@ class SplashActivity2 : AppCompatActivity() {
 
 ### 使用 ViewPager 实现滑动启动页
 
-包含若干张图片，可以左右滑动，在最后一张图片不居中，点击按钮跳转到主页。底部有小点点，代表滑动到了哪个页面。参考 https://blog.csdn.net/jxnk25/article/details/47679021
+包含若干张图片，可以左右滑动，在最后一张图片不居中，点击按钮跳转到主页。底部有小点点，代表滑动到了哪个页面。还有个细节需要注意的是，只有第一次进入 App 才会加载引导页，非第一次进入，直接进入首页即可。
+
+```kotlin
+ /**
+     * 跳转到...
+     */
+    private fun redirectTo() {
+        val intent = Intent()
+        if (isFirstRun(this)) {
+            // 第一次进入，显示引导页
+            intent.setClass(this, GuideActivity::class.java)
+        } else {
+            // 非第一次进入，不显示引导页
+            intent.setClass(this, MainActivity::class.java)
+        }
+        startActivity(intent)
+        finish()
+    }
+```
+
+参考 https://blog.csdn.net/jxnk25/article/details/47679021
 
 ```kotlin
 package com.xzy.splashactivity.demo.splashc

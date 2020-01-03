@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.xzy.splashactivity.demo.MainActivity
 import com.xzy.splashactivity.demo.R
 import com.xzy.splashactivity.demo.functions.Function.hideStatusBar
+import com.xzy.splashactivity.demo.functions.Function.isFirstRun
 
 /**
  * reference https://blog.csdn.net/jxnk25/article/details/47679021
@@ -32,7 +33,14 @@ class SplashActivity3 : AppCompatActivity() {
      * 跳转到...
      */
     private fun redirectTo() {
-        val intent = Intent(this, GuideActivity::class.java)
+        val intent = Intent()
+        if (isFirstRun(this)) {
+            // 第一次进入，显示引导页
+            intent.setClass(this, GuideActivity::class.java)
+        } else {
+            // 非第一次进入，不显示引导页
+            intent.setClass(this, MainActivity::class.java)
+        }
         startActivity(intent)
         finish()
     }
