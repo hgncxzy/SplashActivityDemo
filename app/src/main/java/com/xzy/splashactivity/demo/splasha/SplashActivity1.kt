@@ -21,7 +21,7 @@ class SplashActivity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // 隐藏状态栏
         hideStatusBar(window)
-        val view = View.inflate(this, R.layout.activity_splash1, null)
+        val view = View.inflate(this, R.layout.activity_splash3, null)
         setContentView(view)
         // 设置渐变动画
         val animation = AlphaAnimation(0.6f, 1.0f)

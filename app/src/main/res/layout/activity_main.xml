@@ -22,4 +22,11 @@
         android:layout_marginTop="20dp"
         android:text="App 启动页(欢迎页)加载一张全屏图片 + 倒计时结束" />
 
+    <Button
+        android:id="@+id/btn_splash_with_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="App 使用 Viewpager 实现程序引导界面" />
+
 </LinearLayout>
