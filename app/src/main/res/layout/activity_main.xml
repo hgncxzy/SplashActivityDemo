@@ -12,6 +12,14 @@
         android:id="@+id/btn_splash_load_img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="App 启动页加载一张图片" />
+        android:layout_marginTop="20dp"
+        android:text="App 启动页(欢迎页)加载一张全屏图片" />
+
+    <Button
+        android:id="@+id/btn_splash_load_img_with_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="App 启动页(欢迎页)加载一张全屏图片 + 倒计时结束" />
 
 </LinearLayout>

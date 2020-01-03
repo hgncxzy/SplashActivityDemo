@@ -13,8 +13,10 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".splasha.SplashActivity1"
-            android:theme="@style/SplashTheme">
-        </activity>
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".splashb.SplashActivity2"
+            android:theme="@style/SplashTheme"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

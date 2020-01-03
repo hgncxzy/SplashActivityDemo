@@ -2,12 +2,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- 背景颜色 -->
-    <item android:drawable="@drawable/ic_launcher_background" />
+    <item android:drawable="@drawable/ic_launch" />
 
     <item>
         <!-- 图片 -->
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/splash1" />
+            android:src="@drawable/splash1" />
     </item>
 </layer-list>
