@@ -1,6 +1,10 @@
 # SplashActivityDemo
 App 启动页的实现小栗子.
 
+### 效果
+
+![https://github.com/hgncxzy/SplashActivityDemo/blob/master/img/1.gif]()
+
 ### App 启动页加载一张图片
 
 典型的启动页面，加载一张图片，若干秒后跳转到主页面。
