@@ -11,6 +11,10 @@ import com.xzy.splashactivity.demo.MainActivity
 import com.xzy.splashactivity.demo.R
 import com.xzy.splashactivity.demo.functions.Function.hideStatusBar
 
+/**
+ * reference https://blog.csdn.net/jdfkldjlkjdl/article/details/103816817
+ * App launch page.
+ * */
 class SplashActivity1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -11,11 +11,14 @@ import com.xzy.splashactivity.demo.R
 import com.xzy.splashactivity.demo.functions.Function.hideStatusBar
 import kotlinx.android.synthetic.main.activity_splash2.*
 import java.util.*
-
+/**
+ * reference https://blog.csdn.net/juer2017/article/details/79069970
+ * App launch page with countdown timer.
+ * */
 class SplashActivity2 : AppCompatActivity() {
     private var countDownTimeLong = 5 // 倒计时 5 秒钟
     private val timer = Timer()
-    var task: TimerTask = object : TimerTask() {
+    private var task: TimerTask = object : TimerTask() {
         @SuppressLint("SetTextI18n")
         override fun run() {
             runOnUiThread {
