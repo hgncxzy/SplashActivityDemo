@@ -3,7 +3,7 @@ App 启动页的实现小栗子.
 
 ### 效果
 
-![https://github.com/hgncxzy/SplashActivityDemo/blob/master/img/1.gif]()
+![https://github.com/hgncxzy/SplashActivityDemo/blob/master/img/1.gif](https://github.com/hgncxzy/SplashActivityDemo/blob/master/img/1.gif)
 
 ### App 启动页加载一张图片
 
